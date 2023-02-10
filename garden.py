@@ -35,10 +35,7 @@ print("\nидентификатор сада после прополки:", id(g
 flowers_quantity = len(garden)
 print(f"\nобщее количество цветов: {flowers_quantity}")
 
-bouquet = []
-
-for i in range(5):
-    bouquet.append(random.choice(garden))
+bouquet = random.sample(garden, 5)
 
 print(f"\nбукет: {bouquet}")
     
