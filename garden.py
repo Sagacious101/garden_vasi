@@ -19,7 +19,7 @@ random.shuffle(garden)
 print("сад до прополки:", garden)
 print("\nидентификатор сада до прополки:", id(garden))
 
-def weeding(garden: list, weeds: list) -> None:
+def weeding(garden: list, weeds: tuple) -> None:
     for i in range(len(garden)):
         for n in range(len(weeds)):
             if garden[i] == weeds[n]:
